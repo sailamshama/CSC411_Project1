@@ -9,15 +9,10 @@ from scipy.misc import imread
 from scipy.misc import imresize
 import matplotlib.image as mpimg
 import os
-from scipy.ndimage import filters
-import urllib
+from scipy.ndimage import filte
 
 
 act = list(set([a.split("\t")[0] for a in open("subset_actors.txt").readlines()]))
-
-
-
-
 
 def timeout(func, args=(), kwargs={}, timeout_duration=1, default=None):
     '''From:
